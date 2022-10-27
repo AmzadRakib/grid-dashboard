@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    color: whitesmoke;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 150px repeat(12, 1fr);
+    grid-template-rows: 2fr 1fr 2fr 3fr;
+    gap: 15px;
+}
+
+.container>div {
+    background-color: gray;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.aside {
+    background-color: blue;
+    grid-row: 1 / -1;
+}
+
+.header {
+    background-color: gray;
+    grid-column: 2 / -1;
+}
+
+.stat-one {
+    grid-column: 2 / 5;
+}
+
+.stat-two {
+    grid-column: 5 / 8;
+}
+
+.stat-three {
+    grid-column: 8 / 11;
+}
+
+.stat-four {
+    grid-column: 11 / -1;
+}
+
+.chart-one {
+    grid-column: 2 / 8;
+}
+
+.chart-two {
+    grid-column: 8 / -1;
+}
+
+.overview {
+    grid-column: 2 / 9;
+}
+
+.remainder {
+    grid-column: 9 / -1;
+}
